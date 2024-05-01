@@ -72,11 +72,6 @@ header {
 }
 
 .background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -86,11 +81,24 @@ header {
 .background-sky {
   background-image: url("./img/sky.png");
   z-index: -3;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .background-mountains {
   background-image: url("./img/mountains.png");
   z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title {
@@ -111,16 +119,21 @@ header {
   left: 50%;
   transform: translate(-50%, -50%) scale(.5);
   z-index: -2;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .hero-title .losangeles {
   font-size: 115px;
   line-height: 70px;
+  display: block;
 }
 
 .hero-title .mountains {
   font-size: 125px;
   line-height: 125px;
+  display: block;
 }
 
 @media (min-width: 576px) {
@@ -214,7 +227,7 @@ header {
   background-color: #414f6b;
 }
 
-.sticky {
+body.sticky {
   padding-top: 74px;
 }
 
@@ -223,4 +236,80 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 999;
+}
+
+.history {
+  height: 100vh;
+  background-image: url("./img/section2-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .3s ease;
+  padding-top: 0;
+  position: relative;
+}
+
+.sticky .history {
+  padding-top: 74px;
+}
+
+.section-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  color: #414f6b;
+  font-weight: bold;
+  position: relative;
+  height: 184px;
+  padding-top: 60px;
+}
+
+.section-title::before {
+  content: "01.";
+  font-size: 136px;
+  color: #677793;
+  position: absolute;
+  top: 120px;
+  left: -10px;
+  line-height: 0;
+}
+
+.section-title h2 {
+  position: absolute;
+  bottom: 20px;
+  left: 122px;
+}
+
+.section-para {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 300;
+}
+
+.section-para p {
+  padding: 0;
+  margin: 0;
+}
+
+.history .section-para {
+  padding: 0 67px 0;
+}
+
+.carousel-indicators {
+  bottom: -30px;
+  margin-bottom: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.carousel-container {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
 }
