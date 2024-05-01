@@ -1,0 +1,43 @@
+1.
+Question: Explain in 4-6 sentences why you are the best candidate for the position.
+
+Since I started my interest in front-end I have already gained my first commercial and academic experience and validated my skills with a Bootcamp completion certificate from Kodilla.
+I strive to learn and grow with each new project. I treat every project as a challenge to optimise my work and avoid repeating the same mistakes.
+I am great at implementing design from graphic designer and creating a working application based on it.
+I am the kind of programmer who likes to know more and is not afraid to ask questions when in doubt.
+
+2.
+Question: What was your last (or current) job position? Title? Daily tasks? Accomplishments?
+
+I currently work for a multinational corporation in the automotive industry in a Premium Customer Service position.
+My day-to-day work involves hundreds of phone calls, processing e-mail correspondence, creating sales leads and dealing with Customers on chat to service and resolve customer issues as efficiently as possible.
+Working in this position has taught me to multitask, coordinate the fulfilment of multiple responsibilities at the same time, to decide what should have the highest priority at any given time and to make the Customer feel satisfied as quickly and efficiently as possible.
+
+3.
+Question: What is the accomplishment you are most proud of?
+
+The achievement I am currently most proud of was completing the Bootcamp from Kodilla with a high final grade, combined with maintaining a high performance score at work. This meant a lot of hours in front of a screen for me (about 12 per day or more) and forced me to make a lot of personal sacrifices, but I remained highly motivated most of the time and managed to achieve both goals.
+
+4.
+Question: How would you handle a situation where another team member was critical of your work?
+
+Criticism is vert valuable and can bring a lot of good to the development of a project. I would try to ask my colleague about any comments and come to an agreement. If I had doubts about his criticism, I would ask for a review by a senior colleague or supervisor who could act as a mediator of our dispute. I would be keen to learn wisdom from the criticism that could be used to improve the project or as a lesson to avoid the mistakes identified, but with assertiveness. I would not bury my head in the sand if I was certain that my critic was not 100% right on a point of contention.
+
+5.
+Question: With projects you've worked on in the past, what SEO and ADA principles, if any, did you factor in with your work? Do you have any experience or knowledge of other online marketing work?
+
+I used texts from copywriters containing relevant keywords on the pages. As a developer, I tool care of the appropriate page structure using HTML5 semantic tags, friendly links, optimisation of images and graphics (their size, as well as alt attributes, lazy load). I also tried to check the performance of the site using appropriate tools and code validators.
+I worked with designs provided by graphic designers who provided appropriate contrasts on the page. I ensured that the page could be controlled using the keyboard and took part in creating additional graphics for the visually impaired, which could be turned on using a button.
+Other forms of online marketing that I know are content marketing (e.g. running a blog on the website), social media marketing, email marketing and PPC advertising.
+
+6.
+Question: What experience do you have with development? Could you please list the tech stacks you have the most experience in, from coding languages to content management systems to SysAdmin technologies?
+
+HTML5 - very well
+CSS3 and RWD - very well
+SCSS - well but still learning
+JavaScript ES6 - well and still learning
+jQuery - not so bad, but I don't use it very often (need some documentation)
+PHP - know the basics, need documentation
+C/C++, Python, Java - can solve simple tasks, need to learn to build an application with these
+SQL (MySQL) - well but need documentation for more complex tasks
