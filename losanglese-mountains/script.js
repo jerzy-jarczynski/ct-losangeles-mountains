@@ -17,3 +17,17 @@ $(document).ready(() => {
     stickyNavbar();
   });
 });
+
+$(document).ready(() => {
+  $('.accordion-header').click(function() {
+    const targetId = $(this).data('target');
+    const targetContent = $(targetId);
+
+    if (!targetContent.hasClass('active')) {
+      $('.accordion-content.active').slideUp().removeClass('active');
+      targetContent.slideDown().addClass('active');
+    } else {
+      targetContent.slideUp().removeClass('active');
+    }
+  });
+});

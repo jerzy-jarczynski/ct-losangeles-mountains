@@ -1,11 +1,18 @@
-body, html {
+/* RESET */
+
+body,
+html {
   padding: 0;
   margin: 0;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
+
+/* START NAVIGATION */
 
 .logo {
   width: 43px;
@@ -17,11 +24,13 @@ body, html {
   height: 100%;
 }
 
-.logo, .logo a, .logo img {
- margin: 0;
- padding: 0;
- border: none;
- outline: none;
+.logo,
+.logo a,
+.logo img {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
 }
 
 header {
@@ -36,7 +45,13 @@ header {
 }
 
 .links li {
-  margin-right: 50px;
+  margin-right: 25px;
+}
+
+@media (min-width: 576px) {
+  .links li {
+    margin-right: 50px;
+  }
 }
 
 .links li:last-child {
@@ -44,7 +59,7 @@ header {
 }
 
 .links a {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   text-decoration: none;
   position: relative;
   font-weight: bold;
@@ -71,6 +86,8 @@ header {
   background-color: #fefeff;
 }
 
+/* HERO */
+
 .background {
   background-attachment: fixed;
   background-position: center;
@@ -79,7 +96,7 @@ header {
 }
 
 .background-sky {
-  background-image: url("./img/sky.png");
+  background-image: url('./img/sky.png');
   z-index: -3;
   width: 100%;
   height: 100%;
@@ -89,7 +106,7 @@ header {
 }
 
 .background-mountains {
-  background-image: url("./img/mountains.png");
+  background-image: url('./img/mountains.png');
   z-index: -1;
   width: 100%;
   height: 100%;
@@ -102,7 +119,7 @@ header {
 }
 
 .title {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 .title .losangeles {
@@ -117,7 +134,7 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(.5);
+  transform: translate(-50%, -50%) scale(0.5);
   z-index: -2;
   display: block;
   margin: 0;
@@ -136,10 +153,12 @@ header {
   display: block;
 }
 
+/* HERO RWD */
+
 @media (min-width: 576px) {
   .hero-title {
     left: calc(50% - 30px);
-    transform: translate(-50%, -50%) scale(.85);
+    transform: translate(-50%, -50%) scale(0.85);
   }
 }
 
@@ -165,6 +184,8 @@ header {
   }
 }
 
+/* STICKY NAVBAR && LOGO FOOTER */
+
 .navbar-sticky {
   background-color: #ffffff;
 }
@@ -173,13 +194,24 @@ header {
   height: 74px;
 }
 
-.navbar-sticky .logo {
+.navbar-sticky .logo,
+footer .logo {
   position: relative;
   z-index: 5;
+  transform: scale(0.75);
+}
+
+@media (min-width: 567px) {
+  .navbar-sticky .logo,
+  footer .logo {
+    transform: scale(1);
+  }
 }
 
 .navbar-sticky .logo a,
-.navbar-sticky .logo img {
+.navbar-sticky .logo img,
+footer .logo a,
+footer .logo img {
   position: relative;
   z-index: 6;
   display: block;
@@ -202,17 +234,20 @@ header {
   z-index: 4;
 }
 
-.navbar-sticky .title .losangeles {
+.navbar-sticky .title .losangeles,
+footer .logo .losangeles {
   font-size: 22px;
   line-height: 18px;
 }
 
-.navbar-sticky .title .mountains {
+.navbar-sticky .title .mountains,
+footer .logo .mountains {
   font-size: 24px;
   line-height: 18px;
 }
 
-.navbar-sticky .title {
+.navbar-sticky .title,
+footer .title {
   position: relative;
   top: 2px;
   transform: scale(1.2);
@@ -239,12 +274,14 @@ body.sticky {
   z-index: 999;
 }
 
+/* HISTORY SECTION */
+
 .history {
-  background-image: url("./img/section2-bg.png");
+  background-image: url('./img/section2-bg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   padding-top: 0;
   position: relative;
 }
@@ -258,7 +295,7 @@ body.sticky {
 }
 
 .section-title {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 32px;
   color: #414f6b;
   font-weight: bold;
@@ -267,8 +304,8 @@ body.sticky {
   padding-top: 60px;
 }
 
-.section-title::before {
-  content: "01.";
+.history .section-title::before {
+  content: '01.';
   font-size: 136px;
   color: #677793;
   position: absolute;
@@ -284,7 +321,7 @@ body.sticky {
 }
 
 .section-para {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
   color: #000000;
   font-weight: 300;
@@ -296,8 +333,16 @@ body.sticky {
 }
 
 .history .section-para {
-  padding: 0 67px 0;
+  padding: 0 20px 0;
 }
+
+@media (min-width: 576px) {
+  .history .section-para {
+    padding: 0 67px 0;
+  }
+}
+
+/* BOOTSTRAP CAROUSEL */
 
 .carousel-indicators {
   bottom: -30px;
@@ -313,4 +358,202 @@ body.sticky {
 .carousel-wrapper {
   background-color: #414f6bcc;
   padding: 25px 0 35px 0;
+}
+
+/* CLIMB SECTION */
+
+.climb .section-title {
+  width: 100%;
+  max-width: 330px;
+  padding-top: 0;
+  height: 150px;
+}
+
+.climb .section-title::before {
+  content: '02.';
+  font-size: 136px;
+  color: #a0a7b5;
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  line-height: 0;
+  transform: translateY(-50%);
+}
+
+.climb .section-title h2 {
+  position: absolute;
+  bottom: 29px;
+  left: 192px;
+}
+
+.content-wrapper {
+  min-height: 180px;
+}
+
+.climb .section-para {
+  padding: 0 30px;
+}
+
+@media (min-width: 768px) {
+  .climb .section-title {
+    height: 100%;
+  }
+
+  .climb .section-title h2 {
+    bottom: -45px;
+  }
+
+  .climb .section-para {
+    padding: 0 30px 0 190px;
+  }  
+}
+
+@media (min-width: 992px) {
+  .climb .section-para {
+    padding: 0 30px 0 100px;
+  }  
+}
+
+@media (min-width: 1200px) {
+  .climb .section-para {
+    padding: 0 30px 0 60px;
+  }  
+}
+
+@media (min-width: 1400px) {
+  .climb .section-para {
+    padding: 0 30px;
+  }  
+}
+
+
+/* BOOTSTRAP ACCORDION / COLLAPSE */
+
+.accordion-header-wrapper {
+  background-color: #414f6b;
+  min-height: 40px;
+  color: #b0b4be;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.accordion-header {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0 25px;
+  background-color: none;
+  transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #b0b4be;
+  color: #414f6b;
+  text-decoration: underline;
+}
+
+.accordion-content {
+  display: none;
+  overflow: hidden;
+  height: 545px;
+  position: relative;
+}
+
+.accordion-content.active {
+  display: block;
+}
+
+.content-1-wrapper {
+  background-image: url('./img/tab-1-bg.png');
+  background-attachment: unset;
+}
+
+.content-2-wrapper {
+  background-image: url('./img/tab-2-bg.png');
+  background-attachment: unset;
+}
+
+.accordion-inner {
+  position: absolute;
+  min-width: 90%;
+  min-height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 22px 42px 26px;
+  background-color: #ffffffaa;
+}
+
+.accordion-inner h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #414f6b;
+  margin-bottom: 20px;
+}
+
+.accordion-inner p {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+}
+
+@media (min-width: 576px) {
+  .accordion-inner {
+    min-width: 379px;
+    min-height: 230px;
+    top: 100px;
+    left: 40px;
+    transform: unset;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #414f6b;
+  height: 74px;
+}
+
+footer > div,
+footer > div > div {
+  height: 100%;
+}
+
+.footer-copy {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+  color: #63769d;
+  width: 100%;
+  max-width: 150px;
+  text-align: right;
+}
+
+@media (min-width: 576px) {
+  .footer-copy {
+    max-width: unset;
+  }
+}
+
+footer .title .losangeles,
+footer .title .mountains {
+  color: #63769d;
+}
+
+footer .logo::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 99;
+  background-color: #63769daa;
 }
