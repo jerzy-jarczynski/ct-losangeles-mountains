@@ -240,7 +240,6 @@ body.sticky {
 }
 
 .history {
-  height: 100vh;
   background-image: url("./img/section2-bg.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -250,7 +249,11 @@ body.sticky {
   position: relative;
 }
 
-.sticky .history {
+.history > div {
+  min-height: 100vh;
+}
+
+.sticky .history > div {
   padding-top: 74px;
 }
 
@@ -307,9 +310,7 @@ body.sticky {
   border-radius: 50%;
 }
 
-.carousel-container {
-  position: absolute;
-  left: 50%;
-  bottom: 40px;
-  transform: translateX(-50%);
+.carousel-wrapper {
+  background-color: #414f6bcc;
+  padding: 25px 0 35px 0;
 }
